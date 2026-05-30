@@ -42,7 +42,7 @@ const target = reply.from.first_name;
 
 await ctx.replyWithPhoto(
 {
-source: path.join(__dirname, "chumma.jpg")
+source: path.join(__dirname, "chumma.jfif")
 },
 {
 caption:
@@ -56,11 +56,11 @@ caption:
 });
 
 // /haath
-bot.command("haath", async (ctx) => {
+bot.command("mutthi", async (ctx) => {
 const reply = ctx.message.reply_to_message;
 
 if (!reply) {
-return ctx.reply("⚠️ Kisi message par reply karke /haath use karo.");
+return ctx.reply("⚠️ Kisi message par reply karke /mutthi use karo.");
 }
 
 const sender = ctx.from.first_name;
@@ -68,7 +68,7 @@ const target = reply.from.first_name;
 
 await ctx.replyWithPhoto(
 {
-source: path.join(__dirname, "haath.jpg")
+source: path.join(__dirname, "haath.jfif")
 },
 {
 caption:
